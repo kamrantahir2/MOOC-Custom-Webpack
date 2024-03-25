@@ -16,7 +16,7 @@ const App = () => {
   const [counter, setCounter] = useState(0);
   const [values, setValues] = useState([]);
   const url = "https://notes2023.fly.dev/api/notes";
-  const notes = useNotes(url);
+  const notes = useNotes(BACKEND_URL);
 
   const handleClick = () => {
     setCounter(counter + 1);
